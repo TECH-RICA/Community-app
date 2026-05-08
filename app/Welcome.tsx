@@ -2,12 +2,12 @@ import { slides } from "@/assets/assets";
 import { useRouter } from "expo-router";
 import React, { useEffect, useRef, useState } from "react";
 import {
-    Dimensions,
-    FlatList,
-    Image,
-    Text,
-    TouchableOpacity,
-    View,
+  Dimensions,
+  FlatList,
+  Image,
+  Text,
+  TouchableOpacity,
+  View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -32,7 +32,7 @@ const Welcome = () => {
   }, [currentSlide]);
 
   return (
-    <SafeAreaView className="flex-1 bg-teal-700 " style={{ width, height }}>
+    <SafeAreaView className="flex-1 bg-[#0891B2] " style={{ width, height }}>
       <FlatList
         data={slides}
         ref={flatListRef}
@@ -48,9 +48,10 @@ const Welcome = () => {
           >
             <Image
               source={item.image}
-              style={{ width: 300, height: 300, borderRadius: 30 }}
+              style={{ width: 300, height: 300 }}
               resizeMode="contain"
             />
+            <Image source={item.image1} className="w-10 h-10 " />
             <View className="flex flex-col gap-2 items-center">
               <Text className="text-2xl font-bold text-black">
                 {item.title}
@@ -65,7 +66,7 @@ const Welcome = () => {
           flexDirection: "row",
           justifyContent: "center",
           position: "relative",
-          bottom: "24%",
+          bottom: "20%",
         }}
       >
         {slides.map((_, index) => (
@@ -93,16 +94,20 @@ const Welcome = () => {
         <>
           <View className="flex flex-row items-center relative bottom-[10%] mx-6 justify-between">
             <TouchableOpacity
-              className="bg-teal-600 px-8 py-4 items-center rounded-full"
+              className="bg-[#2DD4BF] px-8 py-4 items-center rounded-full"
               onPress={() => router.push("/SignUp")}
             >
-              <Text className="text-2xl text-white font-bold">Sign Up.</Text>
+              <Text className="text-2xl text-white font-bold font-serif">
+                Sign Up.
+              </Text>
             </TouchableOpacity>
             <TouchableOpacity
               className="bg-white px-8 py-4 items-center rounded-full"
               onPress={() => router.push("/SignIn")}
             >
-              <Text className="text-2xl text-black font-bold">Sign In</Text>
+              <Text className="text-2xl text-black font-bold font-serif">
+                Sign In
+              </Text>
             </TouchableOpacity>
           </View>
         </>

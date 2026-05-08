@@ -8,6 +8,8 @@ export default function RootLayout() {
       <Stack.Screen name="Welcome" options={{ headerShown: false }} />
       <Stack.Screen name="SignIn" options={{ headerShown: false }} />
       <Stack.Screen name="SignUp" options={{ headerShown: false }} />
+      <Stack.Screen name="Verification" options={{ headerShown: false }} />
+      <Stack.Screen name="ForgotPwdModal" options={{ headerShown: false }} />
     </Stack>
   );
 }
