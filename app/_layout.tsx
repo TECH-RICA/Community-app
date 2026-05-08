@@ -10,6 +10,7 @@ export default function RootLayout() {
       <Stack.Screen name="SignUp" options={{ headerShown: false }} />
       <Stack.Screen name="Verification" options={{ headerShown: false }} />
       <Stack.Screen name="ForgotPwdModal" options={{ headerShown: false }} />
+      <Stack.Screen name="ResetPwd" options={{ headerShown: false }} />
     </Stack>
   );
 }

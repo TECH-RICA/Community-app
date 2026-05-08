@@ -77,7 +77,10 @@ const Verification = () => {
             <Text className="text-lg text-red-600 font-serif">Resend</Text>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity className="justify-center items-center bg-[#2DD4BF] mx-10 mt-6 py-3 rounded-lg">
+        <TouchableOpacity
+          className="justify-center items-center bg-[#2DD4BF] mx-10 mt-6 py-3 rounded-lg"
+          onPress={() => router.push("/ResetPwd")}
+        >
           <Text className="font-serif text-xl text-white">Verify</Text>
         </TouchableOpacity>
       </SafeAreaView>
