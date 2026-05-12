@@ -31,3 +31,50 @@ export const slides = [
       "Access quality learning materials \nand connect with opportunities \nin the tech space.",
   },
 ];
+
+export const categories = [
+  {
+    id: 1,
+    title: "All",
+  },
+  {
+    id: 2,
+    title: "Q&A",
+  },
+  {
+    id: 3,
+    title: "Projects",
+  },
+  {
+    id: 4,
+    title: "Jobs",
+  },
+  {
+    id: 5,
+    title: "Learning",
+  },
+];
+
+export const discussions = [
+  {
+    id: 1,
+    description: "How do you manage state in a large Flutter app?",
+    title: "Flutter",
+    view: "24 replies",
+    time: "1hr ago",
+  },
+  {
+    id: 2,
+    description: "Best pratices for Secure API Authentication?",
+    title: "Backend",
+    view: "18 replies",
+    time: "3hr ago",
+  },
+  {
+    id: 3,
+    description: "Career switch to Product Management - tips?",
+    title: "Career",
+    view: "15 replies",
+    time: "5hr ago",
+  },
+];
